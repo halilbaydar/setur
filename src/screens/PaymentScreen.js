@@ -1,12 +1,12 @@
 import { View } from "native-base";
 import React from "react";
 import { Button, Text, TextInput } from "react-native";
-
+import style from '../style/style'
 const PaymentScreen = (props) => {
   const [mytext, setMyText] = React.useState("0")
   return (
     <View>
-      <Text>Tatil için ayırmayı düşündüğün bütçe nedir ?</Text>
+      <Text style={style.birdenFazlaSeenekIaretleyebilirsin}>Tatil için ayırmayı düşündüğün bütçe nedir ?</Text>
       <TextInput
         placeholder="Bütçe"
         onChangeText={(mytext) => {
@@ -14,7 +14,7 @@ const PaymentScreen = (props) => {
         }}
         defaultValue={mytext}
       ></TextInput>
-      <Button title="Tatil Planı Öner" onPress={()=>props.navigation.navigate('TatilPlanlari')}></Button>
+      <Button style={{backgroundColor:"red"}} title="Tatil Planı Öner" onPress={()=>props.navigation.navigate('TatilPlanlari')}></Button>
     </View>
   );
 };

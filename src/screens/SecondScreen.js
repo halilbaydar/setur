@@ -10,11 +10,13 @@ import {
   Image,
   Platform,
 } from "react-native";
+import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
 import style from "../style/style";
 const SecondScreen = (props) => {
   return (
     <View style={{ alignItems: "center", justifyContent: "center" }}>
-      
+      <Text style={style.birdenFazlaSeenekIaretleyebilirsin}>Gidiş Tarihi belirle</Text>
+      <Calendar></Calendar>
       <View style={{ flexDirection: "row", padding: 5 }}>
         <TouchableOpacity
           style={{ padding: 5, marginTop: 2 }}
