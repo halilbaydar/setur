@@ -21,14 +21,13 @@ const defaultStackNavOption = {
     headerStyle: {
       backgroundColor: Platform.OS === "android" ? "#ffffff" : "",
     },
-    backButtonTintColor: 'red',
     headerTitleStyle: {
       fontSize: 25,
       width:180,
       color:'#FF0000',
       textAlign:'center',
     },
-    headerTintColor: "blue",
+    headerTintColor: "red",
     headerMode: 'screen',
     cardStyle: { backgroundColor: '#ffffff' },
   }

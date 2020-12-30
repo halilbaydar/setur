@@ -33,7 +33,6 @@ const NinethScreen = (props) => {
           Birden Fazla Seçenek Seçebilirsin
         </Text>
       </View>
-      <ScrollView>
 
       <View style={{ flexDirection: "row", padding: 5 }}>
         <TouchableOpacity
@@ -165,11 +164,10 @@ const NinethScreen = (props) => {
                 >
                     <Image
                         source={require("../../assets/sonrakisoru.png")}
-                        style={style.yuvarlakKeliDikdrtgen1Kopya2}
+                        style={{width:161}}
                     ></Image>
                 </TouchableOpacity>
             </View>
-      </ScrollView>
     </View>
   );
 };

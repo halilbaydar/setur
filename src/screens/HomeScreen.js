@@ -24,10 +24,6 @@ const HomeScreen = ({ navigation }) => {
     >
       <View>
         <Text style={styles.soru}>Tatile kimlerle gitmeyi planlıyorsun ?</Text>
-        <Text style={styles.birdenFazlaSeenekIaretleyebilirsin}>
-          {" "}
-          Birden Fazla Seçenek Seçebilirsin
-        </Text>
       </View>
 
       <View style={{ flexDirection: "row", marginTop: 20 }}>
@@ -36,7 +32,7 @@ const HomeScreen = ({ navigation }) => {
             padding: 15,
             backgroundColor: tekbasima ? "red" : "white",
             borderStyle: "solid",
-            borderRadius: 15,
+            borderRadius: 10,
           }}
           status={tekbasima ? "checked" : "unchecked"}
           onPress={() => {
@@ -137,6 +133,7 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.sanaEnUygunTatilNerileriniGrmekIinTestiTamamlaman}>
         Sana en uygun tatil önerilerini görmek için testi tamamlamanı öneririz
       </Text>
+      <Image source={require('../../assets/footer.png')} style={{width:'100%' , height:105}}></Image>
     </View>
   );
 };

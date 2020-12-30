@@ -14,7 +14,8 @@ const Events = () => {
     const [event2, setevent2] = React.useState(false);
     const [event3,setevent3]=React.useState(false)
     return <View style={{flexDirection:'row' ,padding:5}}>
-    <ScrollView style={{padding:5}} horizontal={true}>
+    <ScrollView style={{padding:5,paddingHorizontal:30}} horizontal={true}
+    showsHorizontalScrollIndicator={false}>
       <TouchableOpacity
           style={{
             padding: 5,
@@ -22,6 +23,7 @@ const Events = () => {
             borderStyle: "solid",
             borderRadius: 15,
           }}
+          
           status={event1 ? "checked" : "unchecked"}
           onPress={() => {
             setevent(!event1);
@@ -46,7 +48,7 @@ const Events = () => {
           checked={event2}>
           <Image source={require('../../assets/event2.png')} style={style.yuvarlakKeliDikdrtgen6}></Image>
           </TouchableOpacity>
-
+       
           <TouchableOpacity
           style={{
             padding: 5,
@@ -62,6 +64,22 @@ const Events = () => {
           checked={event3}>
           <Image source={require('../../assets/event3.png')} style={style.yuvarlakKeliDikdrtgen6}></Image>
           </TouchableOpacity>
+          <TouchableOpacity
+          style={{
+            padding: 5,
+            backgroundColor: event2 ? "red" : "white",
+            borderStyle: "solid",
+            borderRadius: 15,
+          }}
+          status={event2 ? "checked" : "unchecked"}
+          onPress={() => {
+            setevent2(!event2);
+            console.log({ event2: !event2 });
+          }}
+          checked={event2}>
+          <Image source={require('../../assets/event2.png')} style={style.yuvarlakKeliDikdrtgen6}></Image>
+          </TouchableOpacity>
+
         </ScrollView>
     </View>
 }

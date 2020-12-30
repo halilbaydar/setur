@@ -26,7 +26,6 @@ const sixtscreen = ({ navigation }) => {
         alignItems: "center",
       }}
     >
-      <ScrollView>
         <View>
           <Text style={style.soru}>Tatil sabahı kahvaltı dediğin</Text>
           <Text style={style.birdenFazlaSeenekIaretleyebilirsin}>
@@ -179,7 +178,6 @@ const sixtscreen = ({ navigation }) => {
             ></Image>
           </TouchableOpacity>
         </View>
-      </ScrollView>
     </View>
   );
 };

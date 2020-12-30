@@ -34,7 +34,6 @@ const SevenThScreen = (props) => {
           Birden Fazla Seçenek Seçebilirsin
         </Text>
       </View>
-      <ScrollView>
         <View style={{ flexDirection: "row", padding: 5 }}>
           <TouchableOpacity
             style={{
@@ -179,7 +178,6 @@ const SevenThScreen = (props) => {
             ></Image>
           </TouchableOpacity>
         </View>
-      </ScrollView>
     </View>
   );
 };

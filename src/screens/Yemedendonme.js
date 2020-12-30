@@ -7,15 +7,17 @@ import {
   Button,
   Image,
   ScrollView,
+  Alert
 } from "react-native";
 import styles from "../style/style";
 const Yemedendonme = () => {
-    const [yemek1, seteve1] = React.useState(false);
+    const [yemek1, setyemek1] = React.useState(false);
     const [yemek2, setyemek2] = React.useState(false);
     const [yemek3,setyemek3]=React.useState(false)
     const [yemek4,setyemek4]=React.useState(false)
     return <View style={{flexDirection:'row' ,padding:5}}>
-        <ScrollView style={{padding:5}} horizontal={true}>
+        <ScrollView style={{padding:5,paddingHorizontal:30}} horizontal={true}
+        showsHorizontalScrollIndicator={false}>
           <TouchableOpacity
           style={{
             padding: 5,
@@ -80,6 +82,7 @@ const Yemedendonme = () => {
           <Image source={require('../../assets/yemek4.jpg')} style={styles.yuvarlakKeliDikdrtgen6}></Image>
           </TouchableOpacity>
         </ScrollView>
+        
     </View>
 }
 

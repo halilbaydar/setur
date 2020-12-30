@@ -17,7 +17,6 @@ const TatilPlanlari = () => {
     return <View style={{alignItems:'center'}}>
             <ScrollView>
             <Image source={require('../../assets/antalyakapakfoto.jpg')} style={{marginRight:30}}></Image>
-            <Text style={sytles.ulasimmSecenekleri}>Ulaşım Seçenekleri</Text>
             <Havayolları></Havayolları>
             <Text style={sytles.ulasimmSecenekleri}>Konaklama Seçenekleri</Text>
             <Konaklama></Konaklama>
