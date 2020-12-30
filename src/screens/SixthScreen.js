@@ -69,7 +69,7 @@ const sixtscreen = ({ navigation }) => {
             checked={acikbufe}
           >
             <Image
-              source={require("../../assets/acikbufe.jpg")}
+              source={require("../../assets/kalpliyumurta.jpg")}
               style={style.yuvarlakKeliDikdrtgen6}
             ></Image>
           </TouchableOpacity>

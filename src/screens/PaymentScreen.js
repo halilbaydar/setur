@@ -7,14 +7,16 @@ const PaymentScreen = (props) => {
   return (
     <View>
       <Text style={style.birdenFazlaSeenekIaretleyebilirsin}>Tatil için ayırmayı düşündüğün bütçe nedir ?</Text>
-      <TextInput
+      <TextInput 
+      style={{fontSize:40}}
         placeholder="Bütçe"
         onChangeText={(mytext) => {
             setMyText(mytext);
         }}
         defaultValue={mytext}
       ></TextInput>
-      <Button style={{backgroundColor:"red"}} title="Tatil Planı Öner" onPress={()=>props.navigation.navigate('TatilPlanlari')}></Button>
+      <Button color='red' title="Tatil Planı Öner" onPress={()=>props.navigation.navigate('TatilPlanlari')}/>
+    
     </View>
   );
 };
