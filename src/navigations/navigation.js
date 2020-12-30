@@ -8,16 +8,15 @@ import { createAppContainer } from "react-navigation";
 
 import HomeScreen from "../screens/HomeScreen";
 import SecondScreen from "../screens/SecondScreen"
-import ThirdScreen from "../screens/ThirdScreen"
-import FourthScreen from "../screens/FourthScreen"
 import FifthScreen from "../screens/FifthScreen"
 import SixthScreen from "../screens/SixthScreen"
 import SeventhScreen from "../screens/seventhscreen"
 import EightthScreen from "../screens/EightthScreen"
 import NinethScreen from '../screens/NinethScreen'
 import PaymentScreen from '../screens/PaymentScreen'
-
+import TatilPlanlari from '../screens/Tatilplanlari'
 const defaultStackNavOption = {
+    headerTitle: "Setur",
     headerTitleAlign: "center",
     headerStyle: {
       backgroundColor: Platform.OS === "android" ? "#ffffff" : "",
@@ -37,14 +36,13 @@ const MainNavigator = createStackNavigator(
     {
         HomeScreen: HomeScreen,
         SecondScreen: SecondScreen,
-        ThirdScreen:ThirdScreen,
-        FourthScreen : FourthScreen,
         FifthScreen : FifthScreen,
         SixthScreen:SixthScreen,
         SeventhScreen:SeventhScreen,
         EightthScreen:EightthScreen,
         NinethScreen:NinethScreen,
-        PaymentScreen:PaymentScreen
+        PaymentScreen:PaymentScreen,
+        TatilPlanlari:TatilPlanlari
     },
     {
       mode: "modal",

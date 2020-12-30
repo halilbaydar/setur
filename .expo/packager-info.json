@@ -1,10 +1,9 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19000,
-  "packagerPid": null,
-  "expoServerNgrokUrl": "https://wh-tm9.setur.rn-starter.exp.direct",
-  "packagerNgrokUrl": "https://packager.wh-tm9.setur.rn-starter.exp.direct",
-  "ngrokPid": 13232,
   "webpackServerPort": null,
-  "devToolsPort": 19002
+  "expoServerPort": 19000,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "devToolsPort": 19002,
+  "packagerPort": 19000
 }

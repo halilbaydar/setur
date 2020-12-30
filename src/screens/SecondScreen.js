@@ -6,29 +6,36 @@ import {
   Button,
   ScrollView,
   SafeAreaView,
+  TouchableOpacity,
+  Image,
+  Platform,
 } from "react-native";
-import { Calendar } from "react-native-calendars";
-import { DatePicker } from "react-native-common-date-picker";
-import { RadioButton } from "react-native-paper";
+import style from "../style/style";
 const SecondScreen = (props) => {
   return (
-    <View>
-      <Text style={styles.text}>
-        Gidiş - dönüş için aklındaki tarihler nedir ?
-      </Text>
-      <Text>Gidiş</Text>
-      <DatePicker
-        confirm={(date) => {
-          console.log("Gidiş : ",date);
-        }}
-      />
-      <Text>önüş</Text>
-      <DatePicker
-        confirm={(date) => {
-          console.log("Dönüş : ",date);
-        }}
-      />
-      <Button title="İleri" onPress={()=>{props.navigation.navigate('ThirdScreen')}}></Button>
+    <View style={{ alignItems: "center", justifyContent: "center" }}>
+      
+      <View style={{ flexDirection: "row", padding: 5 }}>
+        <TouchableOpacity
+          style={{ padding: 5, marginTop: 2 }}
+          onPress={() => props.navigation.navigate("FifthScreen")}
+        >
+          <Image
+            source={require("../../assets/soruyugec.png")}
+            style={style.yuvarlakKeliDikdrtgen1Kopya2}
+          ></Image>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{ padding: 5 }}
+          onPress={() => props.navigation.navigate("FifthScreen")}
+        >
+          <Image
+            source={require("../../assets/sonrakisoru.png")}
+            style={style.yuvarlakKeliDikdrtgen1Kopya2}
+          ></Image>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

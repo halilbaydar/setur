@@ -2,7 +2,7 @@ import { View } from "native-base";
 import React from "react";
 import { Button, Text, TextInput } from "react-native";
 
-const PaymentScreen = () => {
+const PaymentScreen = (props) => {
   const [mytext, setMyText] = React.useState("0")
   return (
     <View>
@@ -14,7 +14,7 @@ const PaymentScreen = () => {
         }}
         defaultValue={mytext}
       ></TextInput>
-      <Button title="Tatil Planı Öner" onPress={()=>{console.log("")}}></Button>
+      <Button title="Tatil Planı Öner" onPress={()=>props.navigation.navigate('TatilPlanlari')}></Button>
     </View>
   );
 };
