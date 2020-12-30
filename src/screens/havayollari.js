@@ -72,7 +72,6 @@ const Havayolları = () => {
           <TouchableOpacity
           style={{
             padding: 5,
-            backgroundColor: pegasus ? "red" : "white",
             borderStyle: "solid",
             borderRadius: 15,
           }}

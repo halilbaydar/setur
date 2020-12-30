@@ -41,8 +41,9 @@ const HomeScreen = ({ navigation }) => {
             setAilemle(false)
             setArkadaslarimla(false)
             setPartnerimle(false)
-            console.log({ tekbasima: tekbasima });
+            console.log({ tekbasima: !tekbasima });
           }}
+          checked={tekbasima}
         >
           <Image
             source={require("../../assets/tekbasina.png")}
@@ -64,7 +65,7 @@ const HomeScreen = ({ navigation }) => {
             setTekbasima(false)
             setArkadaslarimla(false)
             setPartnerimle(false)
-            console.log({ ailemle: ailemle });
+            console.log({ ailemle: !ailemle });
           }}
         >
           <Image
@@ -88,7 +89,7 @@ const HomeScreen = ({ navigation }) => {
             setTekbasima(false)
             setAilemle(false)
             setPartnerimle(false)
-            console.log({ arkadaslarimla: arkadaslarimla });
+            console.log({ arkadaslarimla: !arkadaslarimla });
           }}
         >
           <Image
@@ -111,7 +112,7 @@ const HomeScreen = ({ navigation }) => {
             setTekbasima(false)
             setAilemle(false)
             setArkadaslarimla(false)
-            console.log({ partnerimle: partnerimle });
+            console.log({ partnerimle:!partnerimle });
           }}
         >
           <Image

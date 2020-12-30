@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import style from "../style/style";
 const Events = () => {
-    const [event1, seteve1] = React.useState(false);
+    const [event1, setevent1] = React.useState(false);
     const [event2, setevent2] = React.useState(false);
     const [event3,setevent3]=React.useState(false)
     return <View style={{flexDirection:'row' ,padding:5}}>
@@ -26,8 +26,8 @@ const Events = () => {
           
           status={event1 ? "checked" : "unchecked"}
           onPress={() => {
-            setevent(!event1);
-            console.log({ event1: !event });
+            setevent1(!event1);
+            console.log({ event1: !event1 });
           }}
           checked={event1}>
           <Image source={require('../../assets/event1.png')} style={style.yuvarlakKeliDikdrtgen6}></Image>
@@ -67,7 +67,6 @@ const Events = () => {
           <TouchableOpacity
           style={{
             padding: 5,
-            backgroundColor: event2 ? "red" : "white",
             borderStyle: "solid",
             borderRadius: 15,
           }}

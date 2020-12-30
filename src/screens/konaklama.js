@@ -33,22 +33,23 @@ const Konaklama = () => {
           checked={otel1}>
           <Image source={require('../../assets/otel1.png')} style={style.yuvarlakKeliDikdrtgen6}></Image>
           </TouchableOpacity>
+
+
           <TouchableOpacity
           style={{
             padding: 5,
-            backgroundColor: otel3 ? "red" : "white",
             borderStyle: "solid",
+            backgroundColor: otel2 ? "red" : "white",
             borderRadius: 15,
           }}
-          status={otel3 ? "checked" : "unchecked"}
+          status={otel2 ? "checked" : "unchecked"}
           onPress={() => {
-            setotel3(!otel3);
-            console.log({ otel3: !otel3 });
+            setotel2(!otel2);
+            console.log({ otel2: !otel2 });
           }}
           checked={otel3}>
           <Image source={require('../../assets/otel3.png')} style={style.yuvarlakKeliDikdrtgen6}></Image>
           </TouchableOpacity>
-
           <TouchableOpacity
           style={{
             padding: 5,
